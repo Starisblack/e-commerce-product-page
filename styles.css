@@ -1,0 +1,552 @@
+body {
+  text-align: center;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+img {
+  cursor: pointer;
+}
+
+/* navigation bar */
+.navbar {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.7rem !important;
+}
+
+.profile-pic {
+  width: 3%;
+  margin-left: 50px;
+}
+
+.profile-pic:hover {
+  border: 2px solid hsl(26, 100%, 55%);
+  border-radius: 100%;
+}
+
+.head-line {
+  border-top: 3px solid grey;
+  opacity: 30%;
+  width: 80%;
+}
+
+.cart-count {
+  display: none;
+  position: absolute;
+  right: 7.5%;
+  top: 23%;
+  background-color: hsl(26, 100%, 55%);
+  font-size: .7rem;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.container-fluid {
+  width: 80%;
+  padding: 7% 15%;
+}
+
+/* product image side */
+.thumbnail-img:hover {
+  border: 2px solid hsl(26, 100%, 55%);
+  opacity: 50%;
+}
+
+.top-img {
+  margin-top: -50px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  position: relative;
+  left: 200px;
+}
+
+.thumb-row {
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-gap: 30px;
+  position: relative;
+  left: 220px;
+}
+
+.column1 {
+  float: left;
+  width: 11%;
+}
+
+.column2 {
+  float: left;
+  width: 20%;
+  margin: 10px;
+}
+
+/* The Modal (background) */
+.modal-1 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 70px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal Content */
+.modal-content1 {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 30%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close1 {
+  color: white;
+  position: absolute;
+  top: 5%;
+  right: 33%;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+  border-radius: 15px;
+}
+
+.product-img {
+  border-radius: 15px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1% 3%;
+  margin-top: -50px;
+  color: black !important;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: white;
+  border-radius: 100%;
+}
+
+.next {
+  right: -20px;
+}
+
+.prev {
+  left: -20px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.thumbnail-img {
+  border-radius: 10px;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* product details and price */
+.details {
+  width: 70%;
+  margin-top: -15px;
+}
+
+.side-bar {
+  padding-left: 5% !important;
+}
+
+.sneaker-text {
+  color: hsl(26, 100%, 55%);
+}
+
+.sneaker-heading {
+  margin-bottom: 25px;
+}
+
+.percent {
+  background-color: hsl(25, 100%, 94%) !important;
+  color: hsl(26, 100%, 55%) !important;
+  border-radius: 10px;
+  margin-left: 15px;
+  position: relative;
+  top: 5px;
+}
+
+.price {
+  float: left;
+}
+
+.actual-price {
+  clear: both;
+  opacity: 40%;
+  text-decoration: line-through;
+}
+
+.checkout {
+  margin-top: 50px;
+  float: left;
+}
+
+.decrease-btn, .increase-btn, .quantity {
+  border: none;
+  background-color: hsl(223, 64%, 98%);
+  font-size: 1.7rem;
+}
+
+.decrease-btn:focus, .increase-btn:focus {
+  outline: none;
+}
+
+.decrease-btn, .increase-btn {
+  color: hsl(26, 100%, 55%);
+}
+
+.decrease-btn {
+  border-radius: 5px 0 0 5px;
+  position: relative;
+  left: 10px;
+  border: none;
+  outline: none;
+}
+
+.decrease-btn:active {
+  background-color: hsl(223, 64%, 98%);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.increase-btn:active {
+  background-color: hsl(223, 64%, 98%);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.increase-btn {
+  border-radius: 0 5px 5px 0;
+  position: relative;
+  right: 10px;
+  border: none;
+}
+
+.quantity {
+  width: 70px;
+}
+
+input {
+  text-align: center;
+}
+
+input::placeholder {
+  text-align: center;
+}
+
+/* product cart */
+.cart-button {
+  border-radius: 5px;
+  margin: 50px 0 0 20px;
+  padding: 2% 7%;
+  border: none;
+  background-color: hsl(26, 100%, 55%);
+  color: white;
+  box-shadow: 10px 5px 10px hsl(25, 100%, 94%);
+  border: none;
+}
+
+.cart-button:active {
+  box-shadow: 0 5px hsl(25, 100%, 94%);
+  transform: translateY(4px);
+}
+
+.cart-button:hover, .cart-button:focus {
+  outline: none;
+  opacity: 80%;
+}
+
+.add-cart {
+  margin-right: 20px;
+}
+
+.cart-pop, .empty-cart {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  height: 300px;
+  width: 400px;
+  border-radius: 10px;
+  position: absolute;
+  right: 5%;
+  top: 7%;
+  display: none;
+  z-index: 5;
+}
+
+.cart-title {
+  margin-left: 15px;
+  padding-top: 2%;
+}
+
+.thumbnail-img-cart {
+  width: 70%;
+  border-radius: 10px;
+}
+
+.checkout-text p {
+  font-size: 1.2rem;
+  margin: 10px 0 0 0;
+}
+
+.delete {
+  position: relative;
+  top: 30px;
+  cursor: pointer;
+}
+
+.cart-pop hr {
+  border-top: 2px solid grey;
+  opacity: 50%;
+}
+
+.cart-cont {
+  display: grid;
+  grid-template-columns: 100px 250px 10px;
+  margin: 30px 0 0 20px;
+}
+
+.price-cart {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.amt-cal {
+  float: left;
+  padding-right: 20px;
+}
+
+.cart-click {
+  position: relative;
+  top: 100px;
+  cursor: pointer;
+}
+
+.btn1 {
+  border-radius: 14px;
+  color: #ffffff;
+  font-size: 23px;
+  background: hsl(26, 100%, 55%);
+  padding: 10px 40px 10px 40px;
+  text-decoration: none;
+  border: none;
+  width: 90%;
+  margin: 40px 0 0 20px;
+  padding: 4% 0;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  background: #e3b876;
+  text-decoration: none;
+}
+
+/* empty cart pop up */
+.empty-cart-text {
+  text-align: center;
+  position: relative;
+  top: 25%;
+}
+
+.close-empty-cart {
+  position: absolute;
+  right: -2%;
+  top: -5%;
+}
+
+.close-empty-cart:hover {
+  color: hsl(220, 13%, 13%);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .top-img, .thumb-row, .column1, .column2, .close1, .numbertext {
+    display: none;
+  }
+
+  .navbar {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .cart-img {
+    position: absolute;
+    right: 16%;
+  }
+
+  .cart-count {
+    margin: 0;
+    position: absolute;
+    right: 15%;
+    top: 29%;
+  }
+
+  .profile-pic {
+    width: 6%;
+    margin-right: 15px;
+    margin-left: 0;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .container-fluid {
+    padding: 0 !important;
+  }
+
+  .modal-1 {
+    display: block;
+    position: relative;
+    padding-top: 10px;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    background-color: white;
+  }
+
+  .modal-content1 {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+  }
+
+  .product-img {
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .prev,
+  .next {
+    top: 40%;
+    width: auto;
+    padding: 1% 3%;
+  }
+
+  .next {
+    right: 30px;
+  }
+
+  .prev {
+    left: 30px;
+  }
+
+  .max {
+    height: 80%;
+  }
+
+  .side-bar {
+    margin-top: 20px;
+    padding: 5% 0 0 7% !important;
+  }
+
+  .details {
+    width: 100%;
+  }
+
+  .discount {
+    float: left;
+    display: flex;
+  }
+
+  .actual-price {
+    clear: none;
+    opacity: 40%;
+    margin-left: 55%;
+  }
+
+  .percent {
+    border-radius: 10px;
+    margin-left: 15px;
+    position: relative;
+    bottom: 5px;
+    top: 0;
+  }
+
+  .checkout {
+    clear: both;
+    width: 100%;
+    margin: 20px auto 10px auto;
+  }
+
+  .decrease-btn, .increase-btn {
+    width: 10%;
+  }
+
+  .quantity {
+    width: 75%;
+  }
+
+  .cart-button {
+    width: 93%;
+    margin: 10px 0 20px 5px;
+  }
+}

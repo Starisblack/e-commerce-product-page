@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Space+Mono&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+</head>
+
+<body>
+  <main>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <a class="navbar-brand" href="#">sneakers</a>
+      <button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Collections</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Men</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Women</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <img class="cart-img" src="images/icon-cart.svg" alt=""> <span class="cart-count">0</span>
+      <img class="profile-pic" src="images/image-avatar.png" alt="">
+
+
+    </nav>
+
+    <div class="empty-cart">
+
+      <div class="cart-title">
+        <h2>Cart</h2>
+      </div>
+
+      <hr>
+
+      <img class="close-empty-cart" src="images/icon-close.svg" alt="">
+
+      <p class="empty-cart-text">Your cart is empty.</p>
+
+    </div>
+
+    <div class="cart-pop">
+
+      <div class="cart-title">
+        <h2>Cart</h2>
+      </div>
+
+      <hr>
+
+      <div class="cart-cont">
+
+        <div class="checkout-pic">
+          <img class="thumbnail-img-cart" src="images/image-product-1-thumbnail.jpg">
+        </div>
+
+        <div class="checkout-text">
+          <p>Fall Limited Edition Sneakers</p>
+          <p class="amt-cal"> </p>
+          <p class="price-cart">$0.00</p>
+        </div>
+
+        <div class="delete">
+          <img src="images/icon-delete.svg" alt="">
+        </div>
+
+      </div>
+
+      <button class="btn1" type="button" name="button">Checkout</button>
+
+    </div>
+
+    <hr class="head-line">
+
+    <div class="container-fluid">
+
+      <div class="row max-line">
+
+        <div class="col-lg-6 max">
+
+          <img class="top-img" src="images/image-product-1.jpg" style="width:60%">
+          <div class="row thumb-row">
+            <div class="column1">
+              <img class="thumbnail-img" src="images/image-product-1-thumbnail.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="column1">
+              <img class="thumbnail-img" src="images/image-product-2-thumbnail.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="column1">
+              <img class="thumbnail-img" src="images/image-product-3-thumbnail.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="column1">
+              <img class="thumbnail-img" src="images/image-product-4-thumbnail.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+          </div>
+
+
+          <div id="myModal" class="modal-1">
+            <span class="close1 cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content1">
+
+              <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img class="product-img" src="images/image-product-1.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img class="product-img" src="images/image-product-2.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img class="product-img" src="images/image-product-3.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img class="product-img" src="images/image-product-4.jpg" style="width:100%">
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+              <div class="column2">
+                <img class="thumbnail-img demo cursor" src="images/image-product-1-thumbnail.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+              </div>
+              <div class="column2">
+                <img class="thumbnail-img demo cursor" src="images/image-product-2-thumbnail.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+              </div>
+              <div class="column2">
+                <img class="thumbnail-img demo cursor" src="images/image-product-3-thumbnail.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+              </div>
+              <div class="column2">
+                <img class="thumbnail-img demo cursor" src="images/image-product-4-thumbnail.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+        <div class="col-lg-6 side-bar">
+
+          <div class="details">
+            <h5 class="sneaker-text">SNEAKER COMPANY</h5>
+            <h1 class="sneaker-heading">Fall Limited Edition Sneakers</h3>
+
+              <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
+                durable rubber outer sole, they’ll withstand everything the weather can offer.
+              </p>
+          </div>
+
+          <div class="discount">
+            <h2 class="price">$125.00</h2>
+            <button type="button" class="btn btn-outline-light btn-sm percent">50%</button>
+            <h3 class="actual-price">$250.00</h3>
+          </div>
+
+          <div class="checkout">
+            <button type="button" class="decrease-btn">-</button>
+            <input type="text" class="quantity" value="0" placeholder="0">
+            <button type="button" class="increase-btn">+</button>
+          </div>
+
+          <button class="cart-button" type="button" name="button"> <img class="add-cart" src="images/icon-cart.svg" alt="">Add to Cart</button>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+    </div>
+
+
+  </main>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">OGUNNIYI SAMUEL</a>.
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="index.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>
