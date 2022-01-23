@@ -587,5 +587,10 @@ input::placeholder {
   opacity: 40%;
   margin-left: 15%;
 }
+  
+ .cart-pop{
+  height: 300px;
+  width: 300px;
+}
 
 }
