@@ -580,3 +580,12 @@ input::placeholder {
 }
 
 }
+@media screen and (max-width: 350px) {
+
+ .actual-price{
+  clear: none;
+  opacity: 40%;
+  margin-left: 15%;
+}
+
+}
