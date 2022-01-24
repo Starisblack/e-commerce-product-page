@@ -300,6 +300,10 @@ input::placeholder {
   text-align: center;
 }
 
+input:focus {
+  outline: none;
+}
+
 /* product cart */
 .cart-button {
   border-radius: 5px;
@@ -538,11 +542,11 @@ input::placeholder {
   }
 
   .decrease-btn, .increase-btn {
-    width: 10%;
+    width: 30%;
   }
 
   .quantity {
-    width: 75%;
+    width: 35%;
   }
 
   .cart-button {
@@ -552,45 +556,93 @@ input::placeholder {
 }
 
 @media screen and (max-width: 450px) {
+  .actual-price {
+    clear: none;
+    opacity: 40%;
+    margin-left: 25%;
+  }
 
-.actual-price{
-  clear: none;
-  opacity: 40%;
-  margin-left: 25%;
+  .prev,
+  .next {
+    top: 50%;
+    width: auto;
+    padding: 1% 3%;
+  }
+
+  .decrease-btn, .increase-btn {
+    width: 30%;
+  }
+
+  .quantity {
+    width: 30%;
+  }
+
+  .cart-button {
+    width: 88%;
+    margin: 10px 0 20px 5px;
+  }
 }
 
-.prev,
-.next {
-  top: 50%;
-  width: auto;
-  padding: 1% 3%;
-}
-
-.decrease-btn, .increase-btn {
-  width: 10%;
-}
-
-.quantity {
-  width: 70%;
-}
-
-.cart-button {
-  width: 88%;
-  margin: 10px 0 20px 5px;
-}
-
-}
 @media screen and (max-width: 350px) {
+  .actual-price {
+    clear: none;
+    opacity: 40%;
+    margin-left: 15%;
+  }
 
- .actual-price{
-  clear: none;
-  opacity: 40%;
-  margin-left: 15%;
-}
-  
- .cart-pop{
-  height: 300px;
-  width: 300px;
-}
+  .cart-pop, .empty-cart {
+    max-width: 330px;
+    max-height: 400px;
+    position: absolute;
+    right: 3%;
+    top: 7%;
+  }
 
+  .decrease-btn, .increase-btn {
+    width: 30%;
+  }
+
+  .quantity {
+    width: 30%;
+  }
+
+  .cart-cont {
+    margin: 25px 0 0 10px;
+  }
+
+  .checkout-pic {
+    width: 50px;
+  }
+
+  .thumbnail-img-cart {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .cart-title {
+    margin-left: 15px;
+    padding-top: 2%;
+  }
+
+  .checkout-text {
+    width: 150px;
+  }
+
+  .checkout-text p {
+    font-size: 0.8rem;
+    margin: 5px 0 0 -20px;
+  }
+
+  .delete {
+    position: absolute;
+    right: 8%;
+    top: 33%;
+    cursor: pointer;
+  }
+
+  .cart-pop hr {
+    display: block;
+    border-top: 2px solid grey;
+    opacity: 50%;
+  }
 }
