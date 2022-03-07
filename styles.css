@@ -583,66 +583,82 @@ input:focus {
   }
 }
 
-@media screen and (max-width: 350px) {
-  .actual-price {
-    clear: none;
-    opacity: 40%;
-    margin-left: 15%;
-  }
-
+@media screen and (max-width: 426px) {
   .cart-pop, .empty-cart {
-    max-width: 330px;
-    max-height: 400px;
+    height: 300px;
+    width: 360px;
     position: absolute;
-    right: 3%;
-    top: 7%;
-  }
-
-  .decrease-btn, .increase-btn {
-    width: 30%;
-  }
-
-  .quantity {
-    width: 30%;
+    right: 7%;
+    top: 10%;
   }
 
   .cart-cont {
-    margin: 25px 0 0 10px;
-  }
-
-  .checkout-pic {
-    width: 50px;
-  }
-
-  .thumbnail-img-cart {
-    width: 100%;
-    border-radius: 5px;
-  }
-
-  .cart-title {
-    margin-left: 15px;
-    padding-top: 2%;
-  }
-
-  .checkout-text {
-    width: 150px;
+    display: grid;
+    grid-template-columns: 70px 250px 10px;
+    margin: 30px 0 0 15px;
   }
 
   .checkout-text p {
-    font-size: 0.8rem;
-    margin: 5px 0 0 -20px;
+    margin: 0;
   }
 
   .delete {
-    position: absolute;
-    right: 8%;
-    top: 33%;
-    cursor: pointer;
+    position: relative;
+    top: 20px;
   }
 
-  .cart-pop hr {
-    display: block;
-    border-top: 2px solid grey;
-    opacity: 50%;
+  .close-empty-cart {
+    position: absolute;
+    right: -4%;
   }
-}
+
+  @media screen and (max-width: 376px) {
+    .actual-price {
+      clear: none;
+      opacity: 40%;
+      margin-left: 15%;
+    }
+
+    .cart-pop, .empty-cart {
+      max-width: 330px;
+      max-height: 400px;
+    }
+
+    .decrease-btn, .increase-btn {
+      width: 30%;
+    }
+
+    .quantity {
+      width: 30%;
+    }
+
+    .thumbnail-img-cart {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .cart-title {
+      margin-left: 15px;
+      padding-top: 2%;
+    }
+
+    .checkout-pic {
+      width: 80%;
+    }
+
+    .checkout-text p {
+      font-size: 1rem;
+    }
+
+    .delete {
+      position: absolute;
+      right: 5%;
+      top: 35%;
+    }
+
+    .cart-pop hr {
+      display: block;
+      border-top: 2px solid grey;
+      opacity: 50%;
+    }
+  }
