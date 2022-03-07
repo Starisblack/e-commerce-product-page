@@ -612,18 +612,21 @@ input:focus {
     right: -4%;
   }
 
+  @media screen and (max-width: 385px) {
+    .cart-pop, .empty-cart {
+      max-width: 330px;
+    }
 
+    .checkout-text p {
+      font-size: 1rem;
+    }
+  }
 
-  @media screen and (max-width: 386px) {
+  @media screen and (max-width: 376px) {
     .actual-price {
       clear: none;
       opacity: 40%;
       margin-left: 15%;
-    }
-
-    .cart-pop, .empty-cart {
-      max-height: 400px;
-      max-width: 330px;
     }
 
     .decrease-btn, .increase-btn {
@@ -646,10 +649,6 @@ input:focus {
 
     .checkout-pic {
       width: 80%;
-    }
-
-    .checkout-text p {
-      font-size: 1rem;
     }
 
     .delete {
